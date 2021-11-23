@@ -1,0 +1,67 @@
+﻿<h3>@ViewBag.Message</h3>
+
+<div class="container" ng-controller="DataController"> 
+    <br />
+    <div>
+        <div ng-class="{errorInfo: classValue, successInfo: classSuccessValue}" ng-show="showMessageInfo">
+            <p>{{messageInfo}}</p>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Base Stat</th>
+                            <th scope="col">Effort</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="pok in pokemons.stats" style="cursor: pointer;">
+                            <th scope="row" ng-click="searchDetail($index)">{{$index + 1}}</th>
+                            <td ng-click="searchDetail($index)">{{pok.base_stat}}</td>
+                            <td ng-click="searchDetail($index)">{{pok.effort}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-danger" ng-click="backToSearch()">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="ModalDetail">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pokemon Stats Detail</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="detailForm">
+                        <div class="form-group">
+                            <label for="baseStatDetail">Base Stat:</label>
+                            <input type="text" class="form-control" ng-model="baseStatDetail" name="baseStatDetail" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="effortDetail">Effort:</label>
+                            <input type="text" class="form-control" ng-model="effortDetail" name="effortDetail" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="nameDetail">Name:</label>
+                            <input type="text" class="form-control" ng-model="nameDetail" name="nameDetail" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="urlMoreDetail">Url more Details:</label>
+                            <input type="text" class="form-control" ng-model="urlMoreDetail" name="urlMoreDetail" readonly />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

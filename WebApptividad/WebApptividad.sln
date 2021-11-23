@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApptividad", "WebApptividad\WebApptividad.csproj", "{348BF646-8797-4B2F-A806-1A6933A39E26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfApptividad", "WcfApptividad\WcfApptividad.csproj", "{D4912E4A-92C6-4A93-838C-D71192340760}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{348BF646-8797-4B2F-A806-1A6933A39E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{348BF646-8797-4B2F-A806-1A6933A39E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{348BF646-8797-4B2F-A806-1A6933A39E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{348BF646-8797-4B2F-A806-1A6933A39E26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4912E4A-92C6-4A93-838C-D71192340760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4912E4A-92C6-4A93-838C-D71192340760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4912E4A-92C6-4A93-838C-D71192340760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4912E4A-92C6-4A93-838C-D71192340760}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B500EF2F-4A87-40CE-940F-ABF196F22D39}
+	EndGlobalSection
+EndGlobal

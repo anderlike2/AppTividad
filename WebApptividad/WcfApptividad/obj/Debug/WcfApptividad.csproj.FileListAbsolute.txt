@@ -1,0 +1,10 @@
+C:\Development\Personal\AppTividad\WebApptividad\WcfApptividad\bin\WcfApptividad.dll.config
+C:\Development\Personal\AppTividad\WebApptividad\WcfApptividad\bin\WcfApptividad.dll
+C:\Development\Personal\AppTividad\WebApptividad\WcfApptividad\bin\WcfApptividad.pdb
+C:\Development\Personal\AppTividad\WebApptividad\WcfApptividad\obj\Debug\WcfApptividad.csproj.AssemblyReference.cache
+C:\Development\Personal\AppTividad\WebApptividad\WcfApptividad\obj\Debug\WcfApptividad.csproj.CoreCompileInputs.cache
+C:\Development\Personal\AppTividad\WebApptividad\WcfApptividad\obj\Debug\WcfApptividad.dll
+C:\Development\Personal\AppTividad\WebApptividad\WcfApptividad\obj\Debug\WcfApptividad.pdb
+C:\Development\Personal\AppTividad\WebApptividad\WcfApptividad\bin\Newtonsoft.Json.dll
+C:\Development\Personal\AppTividad\WebApptividad\WcfApptividad\bin\Newtonsoft.Json.xml
+C:\Development\Personal\AppTividad\WebApptividad\WcfApptividad\obj\Debug\WcfApptividad.csproj.CopyComplete

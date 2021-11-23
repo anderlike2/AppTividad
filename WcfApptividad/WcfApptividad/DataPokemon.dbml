@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AppTividad" Class="DataPokemonDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=BENA801420-11;Initial Catalog=AppTividad;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="AppTividadConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.POKEMONS_DATA" Member="POKEMONS_DATAs">
+    <Type Name="POKEMONS_DATA">
+      <Column Name="ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="XMLDATA" Type="System.String" DbType="VarChar(5000) NOT NULL" CanBeNull="false" />
+      <Column Name="REGISTERDATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+    <InsertFunction FunctionId="FunctionId1">
+      <Argument Parameter="xmlData" Member="XMLDATA" />
+    </InsertFunction>
+  </Table>
+  <Function Id="FunctionId1" Name="dbo.CREATEPOKEMONDATA" Method="CREATEPOKEMONDATA">
+    <Parameter Name="XmlData" Parameter="xmlData" Type="System.String" DbType="VarChar(500)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

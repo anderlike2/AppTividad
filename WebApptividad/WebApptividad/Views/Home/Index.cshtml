@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">
+        Cree una aplicacion que contenga 2 vistas (cshtml). La Vista1 debe tener un EditText y un
+        botón. La vista2, debe tener una tabla scrolable (tipo grid). Cuando el usuario le de click a un
+        row de esta lista escrollable, deberá mostrar un popup window con la info asociada a ese row.
+        Crear un Win Application con un edit text para digitar un valor un boton de consultar y un grid.
+        Cuando el usuario presiona el boton, consume el WCF y pasa por parametro el valor del edit
+        text. Este WCF va a buscar todas las consultas ya realizadadas y cargarlas a un grid mostrando
+        el description.
+    </p>
+    <p class="lead">
+        Funcionalidad. En el proyecto web. El valor que es digitado en el EditText de la Vista 1 (cshtml),
+        es un string que debe ser el zip code de un valor a buscar. El cual debe ser enviado como
+        parámetro a la vista 2, una vez presionado el botón.
+        Cuando la vista 2 se carga, debe consumir por medio de AngularJS el método GetWeather del
+        web service http://www.webservicex.net/globalweather.asmx
+        (http://www.webservicex.net/globalweather.asmx?WSDL), y mostrar los resultados (usando el
+        popup de bootstrap). Cada vez que obtenga los datos de este web service, debe guardar un
+        registro en una tabla en SQL Server, haciendo un llamado a un Stored Procedure via LINQ
+        (LINQ a Stored Procedure), guardando el XML en una tabla, dondel el ID es un Identity. Debe
+        crear una consulta que consulte de esta tabla todos los Description de los Forecasts donde el
+        MorningLow sea >= a un parámetro. Esta consulta (tambien debe hacerse con un LINQ a
+        Stored Procedure) y debe ser expuesta en un WCF y el mismo se debe consumir en un Win
+        Application (application del que se habla en el primer párrafo) (text box para digitar un valor que
+        por default va a decir 75 y un grid para mostrar los resultados obtenidos)
+        - La estética del UI en modo HTML5 (MVC con Razor) va a ser evaluada.
+        - Debe ser programada en en TSQL y C#
+        - Orden y documentación de código se evaluará (tanto de creación de objetos de BD como de la lógica
+        en .Net).
+    </p>
+    <p class="lead">
+        Resumen de los Entregables
+        Son 3 entregables
+        1. Sitio web MVC con Razor. Este sitio web consume el web service externo y el WCF que vas a crear en
+        el siguiente punto
+        2. WCF. En este servicio hay q hacer dos métodos. Uno que guarda la respuesta del web service externo
+        y otro método que es para consultar esos datos guardados
+        3. Win Application. Sirve para usar el método de consulta del WCF que haz creado en el paso anterior
+        Hay que hacer un que grid se muestra en
+        1. Vista 2 (cshtml) del Sitio web MVC con Razor
+        2. Win Application, para mostrar el resultado del método de consulta del WCF que creaste
+        Puntos Extras:
+        Manejo de errores y L&F
+    </p>
+</div>

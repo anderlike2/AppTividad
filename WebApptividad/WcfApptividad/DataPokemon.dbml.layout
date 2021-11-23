@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataPokemon">
+  <DataContextMoniker Name="/DataPokemonDataContext" />
+  <nestedChildShapes>
+    <classShape Id="91394b76-cd68-4ae2-b041-92d0cf70cf33" absoluteBounds="5, 2.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataPokemonDataContext/POKEMONS_DATA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="35021553-c0af-4fb9-9bc3-155e636c519b" absoluteBounds="5.015, 2.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

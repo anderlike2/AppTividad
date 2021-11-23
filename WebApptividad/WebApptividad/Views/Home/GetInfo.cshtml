@@ -1,0 +1,43 @@
+﻿<h3>@ViewBag.Message</h3>
+
+<div class="container" ng-controller="GetInfoController">
+    <form>
+        <div ng-class="{errorInfo: classValue}" ng-show="showMessageInfo">
+            <p>{{messageInfo}}</p>
+        </div>
+        <br />
+        <div class="form-group">
+            <label for="pokemonid">Pokemon id</label>
+            <input type="number" class="form-control" ng-model="search" name="textSearch" required />
+            <small id="searchHelp" class="form-text text-muted">Please enter the name of a pokemon.</small>
+        </div>
+        <button type="button" class="btn btn-primary" ng-click="searchPokemonId()">Search</button>
+        <br />
+
+        <div class="form-row">
+            <div class="form-group">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Base Stat</th>
+                            <th scope="col">Effort</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Url</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="det in statsDetail.Stats" style="cursor: pointer;">
+                            <th scope="row">{{$index + 1}}</th>
+                            <td>{{det.BaseStat}}</td>
+                            <td>{{det.Effort}}</td>
+                            <td>{{det.Stat.Name}}</td>
+                            <td>{{det.Stat.Url}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </form>
+</div>
